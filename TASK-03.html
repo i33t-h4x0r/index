@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Continental Hotel Reservation Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.form-container {
+background-color: gray;
+border: 2px solid #888;
+padding: 10px;
+width: 500p;
+h2 {
+color: red;
+text-align: center;
+margin-top: 5px;
+margin-bottom: 15px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+td {
+border: 1px solid #7a9ac0;
+padding: 8px;
+        }
+.label-cell {
+background-color: #ADD8E6;
+font-weight: bold;
+text-align: right;
+width: 30%;
+        }
+.input-cell {
+background-color: #e6f0fa;
+width: 70%;
+}
+input[type="text"], input[type="email"], select {
+width: 95%;
+padding: 3px;
+}
+.submit-container {
+text-align: center;
+margin-top: 10px;
+}
+.submit-btn {
+background-color: #e1e1e1;
+border: 1px solid #777;
+padding: 4px 15px;
+cursor: pointer;
+ }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+<h2>Continental Hotel Reservation Form</h2>
+<form>
+<table>
+<!-- Name -->
+ <tr>
+ <td class="label-cell">Name</td>
+<td class="input-cell"><input type="text" placeholder="Enter your name"></td>
+</tr>
+<!-- eMail -->
+ <tr>
+<td class="label-cell">eMail</td>
+<td class="input-cell"><input type="email" value="info@continental.pk"></td>
+</tr>
+<!-- Mobile No -->
+<tr>
+<td class="label-cell">Mobile No</td>
+<td class="input-cell"><input type="text" placeholder="Enter your cell number"></td>
+</tr>
+<!-- Arrival Time -->
+            <tr>
+<td class="label-cell">Arrival Time</td>
+<td class="input-cell"><input type="text" placeholder="Enter your arrival time"></td>
+</tr>
+<!-- Departure -->
+<tr>
+<td class="label-cell">Departure</td>
+<td class="input-cell">
+<input type="text" style="width: 45%;"> 
+<input type="text" style="width: 45%;">
+</td>
+</tr>
+<!-- Room Type -->
+<tr>
+<td class="label-cell">Room Type</td>
+<td class="input-cell">
+<label><input type="radio" name="room"> Single</label>
+ <label><input type="radio" name="room"> Double</label><br>
+<label><input type="radio" name="room"> Presidential Suite</label>
+</td>
+</tr>
+ <!-- Preferences -->
+ <tr>
+ <td class="label-cell">Preferences</td>
+ <td class="input-cell">
+ <label><input type="checkbox"> Non-Smoking</label><br>
+ <label><input type="checkbox"> Internet</label><br>
+ <label><input type="checkbox"> Firm Mattress</label>
+ </td>
+ </tr>
+<!-- Mode of Payment -->
+ <tr>
+<td class="label-cell">Mode of Payment</td>
+<td class="input-cell">
+<label><input type="checkbox"> Cash</label>
+<label><input type="checkbox"> Check</label><br>
+<label><input type="checkbox"> Credit Card</label>
+<select style="width: auto; margin-left: 5px;">
+<option>Select Card</option>
+ <option>Visa</option>
+  <option>MasterCard</option>
+  </select>
+    </td>
+      </tr>
+     </table>
+
+ <div class="submit-container">
+   <input type="submit" value="Send Data" class="submit-btn">
+ </div
+</form>
+</div>
+
+</body>
+</html>
+
+
